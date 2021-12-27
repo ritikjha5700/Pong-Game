@@ -40,7 +40,7 @@ ball.dy = 2
 score_a = 0
 score_b = 0
 
-# Pen
+# Score Board
 pen = turtle.Turtle()
 pen.speed()
 pen.color("white")
@@ -54,9 +54,9 @@ pen.write("Player A: 0  Player B: 0", align="center",
 
 
 def paddle_a_up():
-    y = paddle_a.ycor()
-    y += 20
-    paddle_a.sety(y)
+    x = paddle_a.ycor()
+    x += 20
+    paddle_a.sety(x)
 
 
 def paddle_a_down():
@@ -68,15 +68,15 @@ def paddle_a_down():
 
 
 def paddle_b_up():
-    y = paddle_b.ycor()
-    y += 20
-    paddle_b.sety(y)
+    x = paddle_b.ycor()
+    x += 20
+    paddle_b.sety(x)
 
 
 def paddle_b_down():
-    y = paddle_b.ycor()
-    y -= 20
-    paddle_b.sety(y)
+    x = paddle_b.ycor()
+    x -= 20
+    paddle_b.sety(x)
 
 
 # Keyboard binding
